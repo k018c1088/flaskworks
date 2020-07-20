@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form method="POST" action="">
+        入力歩数：
+        <input type="number" name="data">
+        <br>
+        <input style="background-color: white;" type="submit" value="送信">
+    </form>
+    <hr>
+<h1>平均歩数：{{ ave }}</h1>
+    <ul>
+        {% for val in list %}
+        <li>
+            {{val[0]}} 歩数：{{val[1]}}
+        </li>
+        {% endfor %}
+    </ul>    
+</body>
+</html>
